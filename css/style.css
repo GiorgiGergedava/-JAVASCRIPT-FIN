@@ -774,11 +774,9 @@ section .title::after {
     width: 90%;
 }
 
-.skills-content .right .css::before {
-    width: 60%;
-}
 
-.skills-content .right .js::before {
+
+.skills-content .right .wordpress::before {
     width: 50%;
 }
 
@@ -786,11 +784,11 @@ section .title::after {
     width: 50%;
 }
 
-.skills-content .right .mysql::before {
+.skills-content .right .css::before {
     width: 85%;
 }
 
-.skills-content .right .wordpress::before {
+.skills-content .right .js::before {
     width: 75%;
 }
 

@@ -1,0 +1,32 @@
+@media (max-width: 420px) {
+    
+    /* span{
+        font-size: 25px;
+    } */
+    .max-width {
+        padding: 0px 10px;
+    }
+    
+   
+    
+}
+
+@media (max-width: 390px) {
+    
+    .navbar{
+        display: flex;
+        
+    }
+    .logo{
+        font-size: 15px;
+    }
+
+
+
+}
+
+@media (max-width: 320px)
+
+
+
+

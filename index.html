@@ -6,6 +6,9 @@
     <title>Giorgi Gergedava</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -17,12 +20,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://kit.fontawesome.com/fb6e867aa8.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
 
+    </div>
     <!-- pre loader  -->
     <div id="preloader"></div>
     <nav class="navbar">
@@ -272,25 +277,35 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+
+
+
+
+
+                    <form action="#" id="formElement">
+
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" id="usernameField" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" id="emailField" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" id="subjectField" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." id="MessageFilde" required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
                         </div>
                     </form>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -329,25 +344,24 @@
 
 
 
-        <p>&copy; 2024 <a><span></span></a> | All Rights Reserved |</p>
 
 
     </footer>
+    <!-- cookies არ მამატებინებს და ბევრ სხვა  რამეს  jqueryის ბრალია!! -->
+
+    <!-- <div class="cookies-eu-banner"></div>
+    By clicking ”OK”, you agree to the storing of cookies on your device to
+    enhance site navigation, analyze site usage, and improve marketing.
+    <button>Accept</button> -->
+    <!-- script -->
+
+    <script src="script.js"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="script.js"></script>
-    <!-- scroll bar js  -->
-    <script type="text/javascript">
-        var preogressbar = document.getElementById("preogressbar")
-        var percent = document.getElementById("percent")
+    <script src="node_modules/axios/dist/axios.min.js"></script>
 
-        var totalHeight = document.body.scrollHeight - window.innerHeight;
-        window.onscroll = function () {
-            var progress = (window.pageYOffset / totalHeight) * 100;
-            preogressbar.style.height = progress + "%";
-            percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%"
-        }
-    </script>
+
     <!-- pre loader js  -->
     <script>
         var loader = document.getElementById("preloader");
@@ -356,8 +370,7 @@
             loader.style.display = "none";
         })
     </script>
-    <!-- partial -->
-    <script src="./script.js"></script>
+
 
 </body>
 

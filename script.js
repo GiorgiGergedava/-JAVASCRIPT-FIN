@@ -12,6 +12,20 @@
 // })
 
 
+// let header = document.getElementById('navbar');
+// let oldColor = navbar.style.backgroundColor;
+
+// document.body.addEventListener('scroll', () => {
+//   let yPosition = document.body.scrollTop;
+//   if (yPosition > 100) {
+//     navbar.style.backgroundColor = "teal";
+//   }
+//   else {
+//     navbar.style.backgroundColor = oldColor;
+//   }
+// })
+
+
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -44,7 +58,7 @@ $(document).ready(function () {
 
   // toggle menu/navbar script
 
- 
+
 
   $('.menu-btn').click(function () {
     $('.navbar .menu').toggleClass("active");
@@ -52,18 +66,18 @@ $(document).ready(function () {
   });
 
   // scroll bar
-  var preogressbar = document.getElementById("preogressbar")
-  var percent = document.getElementById("percent")
+  let preogressbar = document.getElementById("preogressbar")
+  let percent = document.getElementById("percent")
 
-  var totalHeight = document.body.scrollHeight - window.innerHeight;
+  let totalHeight = document.body.scrollHeight - window.innerHeight;
   window.onscroll = function () {
-    var progress = (window.pageYOffset / totalHeight) * 100;
+    letprogress = (window.pageYOffset / totalHeight) * 100;
     preogressbar.style.height = progress + "%";
     percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%"
   }
 
   // typing text animation script
-  var typed = new Typed(".typing", {
+  let typing = new Typed(".typing", {
     strings: ["Front End Developer", "Junior", "Front End Developer",],
     typeSpeed: 100,
     backSpeed: 80,
@@ -205,7 +219,21 @@ const setCookie = function (name, value, expiryDays, domain, path, secure) {
 };
 
 // npm
+axios.get('http://localhost:3000/posts')
+  .then(function (response) {
+    // handle success
+    console.log(response.data);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });
 
+
+  // export import ვიცი)
 
 
 
